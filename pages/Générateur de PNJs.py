@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
-cle_api = "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"
+import os
+cle_api = os.getenv("OPENAI_API_KEY")
 
 # --- PARAMÉTRAGE DES LIEUX DISPONIBLES ---
 LORE_PAR_LIEU = {
