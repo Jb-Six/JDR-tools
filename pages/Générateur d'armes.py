@@ -1,75 +1,89 @@
 import streamlit as st
 import random
+import pandas as pd
 
-# Listes de noms d'armes par catégorie
+# Noms d’armes par catégorie
 ONE_HAND_MELEE = [
-    "Épée courte", "Hachette", "Dague", "Fléau", "Marteau de poing", "Sabre", "Glaive court"
+    "Épée courte", "Dague", "Fléau d'arme", "Marteau de guerre", "Sabre", "Glaive court", "Couteau", "Fouet", "Gourdin", "Masse d'armes", "Cimeterre", "Rapière", "Poignard"
 ]
 TWO_HAND_MELEE = [
-    "Épée longue", "Hache de guerre", "Marteau de guerre", "Masse lourde", "Lance", "Gourdin"
+    "Épée longue", "Hache de guerre", "Masse lourde", "Lance", "Baton", "Hallebarde"
 ]
 TWO_HAND_RANGED = [
-    "Arc long", "Arbalète lourde", "Lance-pierre", "Arc de chasse", "Javelot de guerre", "Harpon"
+    "Arc long", "Arbalète", "Lance-pierre", "Arc de chasse", "Javelot", "Harpon", "Fronde"
 ]
 
-RARITIES = {
-    "Commun": 0,
-    "Rare": 1,
-    "Très rare": 2,
-    "Légendaire": 3,
+WEAPON_TYPES = {
+    "Arme à 1 main (CAC)": {
+        "names": ONE_HAND_MELEE,
+        "damage_multiplier": 1.0
+    },
+    "Arme à 2 mains (CAC)": {
+        "names": TWO_HAND_MELEE,
+        "damage_multiplier": 1.2
+    },
+    "Arme à 2 mains (Distance)": {
+        "names": TWO_HAND_RANGED,
+        "damage_multiplier": 0.8
+    }
 }
 
-PRICE_TABLE = {
-    "Commun": 10,
-    "Rare": 50,
-    "Très rare": 250,
-    "Légendaire": 1000
-}
+# Prix basé sur dégâts
+def calculate_price(damage):
+    return round(0.28 * (damage ** 2.5))
 
-RARITIES_DISPLAY = list(RARITIES.keys())
+def generate_weapon(weapon_type, dmg_min, dmg_max):
+    base_damage = random.randint(dmg_min, dmg_max)
+    multiplier = WEAPON_TYPES[weapon_type]["damage_multiplier"]
+    adjusted_damage = round(base_damage * multiplier)
+    name = random.choice(WEAPON_TYPES[weapon_type]["names"])
+    price = calculate_price(base_damage)
+    return {
+        "Nom": name,
+        "Type": weapon_type,
+        "Dégâts": adjusted_damage,
+        "Dégâts de base": base_damage,
+        "Prix (PO)": price
+    }
 
-# Dégâts par rareté et catégorie
-DAMAGE_TABLE = {
-    "Arme à 1 main (CAC)":     [5, 10, 20, 40],
-    "Arme à 2 mains (CAC)":    [6, 12, 24, 48],
-    "Arme à 2 mains (Distance)": [4, 8, 16, 32]
-}
-NAME_TABLE = {
-    "Arme à 1 main (CAC)": ONE_HAND_MELEE,
-    "Arme à 2 mains (CAC)": TWO_HAND_MELEE,
-    "Arme à 2 mains (Distance)": TWO_HAND_RANGED
-}
+# Initialisation de session state
+if "magasin" not in st.session_state:
+    st.session_state.magasin = {}
 
-st.title("⚔️ Générateur d'Armes")
+st.title("🏪 Générateur de Magasin d'Armes")
 
+st.subheader("🎯 Filtres globaux")
 col1, col2 = st.columns(2)
 with col1:
-    weapon_type = st.selectbox("Type d'arme", list(DAMAGE_TABLE.keys()))
+    dmg_min = st.number_input("Dégâts minimum (référentiel 1 main)", min_value=1, value=4)
 with col2:
-    rarity = st.selectbox("Rareté", RARITIES_DISPLAY)
+    dmg_max = st.number_input("Dégâts maximum (référentiel 1 main)", min_value=dmg_min, value=10)
 
-with st.form("arme_form"):
-    submitted = st.form_submit_button("Générer une arme !")
-    if submitted:
-        # Choix du nom aléatoire
-        name = random.choice(NAME_TABLE[weapon_type])
-        degats = DAMAGE_TABLE[weapon_type][RARITIES[rarity]]
-        prix = PRICE_TABLE[rarity]
+st.markdown("### 🧃 Générer un magasin complet")
 
-        st.success(f"**{name}**")
-        st.write(f"**Type :** {weapon_type}")
-        st.write(f"**Rareté :** {rarity}")
-        st.write(f"**Dégâts :** {degats}")
-        st.write(f"💰 **Prix :** {prix} PO")
+with st.form("shop_form"):
+    nb_items = st.slider("Nombre d'armes par catégorie", 1, 20, 5)
+    submitted_shop = st.form_submit_button("Générer le magasin")
 
-        st.markdown(
-            "<div style='margin-top: 1em; color: #666; font-size: 0.9em;'>"
-            "🔄 Clique sur le bouton pour générer une nouvelle arme !"
-            "</div>",
-            unsafe_allow_html=True
-        )
-    else:
-        st.info("Sélectionne un type et une rareté puis clique sur 'Générer une arme !'")
+    if submitted_shop:
+        magasin = {}
+        for weapon_type in WEAPON_TYPES.keys():
+            magasin[weapon_type] = [
+                generate_weapon(weapon_type, dmg_min, dmg_max) for _ in range(nb_items)
+            ]
+        st.session_state.magasin = magasin  # Stockage persistant
+
+# Bouton pour réinitialiser le magasin
+if st.session_state.magasin:
+    if st.button("🗑️ Réinitialiser le magasin"):
+        st.session_state.magasin = {}
+
+# Affichage des tableaux
+if st.session_state.magasin:
+    for weapon_type, items in st.session_state.magasin.items():
+        df = pd.DataFrame(items)[["Nom", "Type", "Dégâts", "Prix (PO)"]].sort_values(by="Prix (PO)", ascending=True)
+        st.markdown(f"#### 🗃️ {weapon_type}")
+        st.dataframe(df, use_container_width=True, hide_index=True)
 
 st.markdown("---")
-st.caption("By OpenAI & ChatGPT – Générateur d’armes pour Re:Born ⚔️")
+st.caption("By OpenAI & ChatGPT – Générateur de loot pour Re:Born ⚔️")

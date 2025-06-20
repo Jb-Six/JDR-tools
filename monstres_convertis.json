@@ -895,8 +895,8 @@
         "bonus": 0
       }
     },
-    "Armure": 30,
-    "PV": 33,
+    "Armure": 20,
+    "PV": 1,
     "Vitesse": "25 ft. ",
     "Immunités dégâts": "Poison, Psychic",
     "Immunités conditions": "Blinded, Charmed, Deafened, Exhaustion, Frightened, Paralisé, Petrified, Empoisonné",
@@ -904,8 +904,8 @@
     "Sens": "Vue aveugle sur 60 ft., Initiative 6",
     "Langues": "--",
     "Difficulté": "1 (200 XP)",
-    "Traits": "<em><br><br><em><strong>Susceptibilité antimagique</strong></em> L'armure est neutralisée lorsqu'elle se trouve dans la zone d'un champ antimagique. Si elle est ciblée par dissipation de la magie, l'armure doit réussir un jet de sauvegarde de Constitution contre le DC de sauvegarde contre les sorts du lanceur de sorts ou tomber inconsciente pendant 1 minute. <br><br><em><strong>Fausse apparence.</strong></em> Tant que l'armure reste immobile, il est impossible de la distinguer d'une armure normale.",
-    "Actions": "<em><strong>Attaque Multiple.</strong></em> L'armure effectue deux attaques de mêlée. <br><br><em><strong>Frappe.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) dégâts de matraquage.",
+    "Traits": "<b>Susceptibilité à la magie</b> : Devient inactive dans un champ anti-magique.\n\n<b>Fausse apparence</b> : Tant qu’elle ne bouge pas, elle ressemble parfaitement à une armure normale.\n",
+    "Actions": "<b>Attaque multiple</b> : Effectue deux attaques de mêlée.\n\n<b>Frappe</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 5 dégâts de matraquage.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/8/429/1000/1000/636306156895834255.jpeg"
   },
@@ -1185,9 +1185,9 @@
     "Langues": "--",
     "Difficulté": "1/4 (50 XP)",
     "Traits": "",
-    "Actions": "<em><strong>Bec.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 6 (1d8 + 2) points de dégâts tranchants.",
+    "Actions": "<b>Bec</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 6 dégâts tranchants.",
     "Actions légendaires": "",
-    "img_url": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
+    "img_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR5iWccCvsDJnB8pmoC1CIxXgKkVvvXIKkFZEDjR5Iy0GHywA8-8nXaFyenkzKPmjKuaPJSLqzlZZbgmU_-RpbDPUUXU8nB1iifJxkSKkY7KrWx-JsccVYhtHz1X-bKT0uEIk6d27LdnaY3MvtCrpGz_3hEVFiiOj29rlqXf_A5PRzMv4hwKlQHNW07aU/s677/Axe%20beak%20from%20Icewind%20Dale%20-%20Rime%20of%20the%20Frostmaiden.jpg"
   },
   {
     "name": "Azer",
@@ -1350,8 +1350,8 @@
         "bonus": 0
       }
     },
-    "Armure": 4,
-    "PV": 11,
+    "Armure": 2,
+    "PV": 15,
     "Vitesse": "30 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
@@ -1360,9 +1360,9 @@
     "Langues": "Une langue au choix (généralement la langue commune)",
     "Difficulté": "1/8 (25 XP)",
     "Traits": "",
-    "Actions": "<em><strong>Scimitar.</strong></em> <em>Attaque de l'arme de mêlée :</em> +3 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 4 (1d6 + 1) points de dégâts tranchants. <br><br><em><strong>Arbalète légère.</strong></em> <em>Attaque d'arme à distance :</em> +3 au toucher, portée 80 ft./320 ft., une cible. <em>Coup :</em> 5 (1d8 + 1) points de dégâts perforants.",
+    "Actions": "<b>Cimeterre</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 4 dégâts tranchants.\n\n<b>Arbalète légère</b> : Attaque à distance (portée 25 m / 100 m) contre une cible. Inflige 5 dégâts perforants.\n",
     "Actions légendaires": "",
-    "img_url": "https://media-waterdeep.cursecdn.com/attachments/2/656/humanoid.jpg"
+    "img_url": "https://www.worldanvil.com/uploads/images/8880c6b4d51aea71755284c35e444bd9.png"
   },
   {
     "name": "Capitaine des bandits",
@@ -1490,17 +1490,17 @@
         "bonus": 0
       }
     },
-    "Armure": 12,
-    "PV": 52,
+    "Armure": 3,
+    "PV": 40,
     "Vitesse": "20 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
     "Résistances": "",
     "Sens": "Vision dans le noir, Initiative 9",
     "Langues": "--",
-    "Difficulté": "3 (700 XP)",
-    "Traits": "<em><strong></strong></em> Si une créature commence son tour à moins de 30 ft. du basilic et que les deux peuvent se voir, le basilic peut forcer la créature à faire un jet de sauvegarde de Constitution DC 12 si le basilic n'est pas incapacité. En cas d'échec, la créature commence à se transformer en pierre par magie et est immobilisée. Elle doit refaire le jet de sauvegarde à la fin de son prochain tour. En cas de réussite, l'effet prend fin. En cas d'échec, la créature est pétrifiée jusqu'à ce qu'elle soit libérée par le sort restauration supérieure ou une autre magie.Une créature qui n'est pas surprise peut détourner les yeux pour éviter le jet de sauvegarde au début de son tour. Si elle le fait, elle ne peut pas voir le basilic jusqu'au début de son prochain tour, où elle peut à nouveau détourner les yeux.Si elle regarde le basilic entre-temps, elle doit immédiatement effectuer le jet de sauvegarde. Si le basilic voit son reflet à moins de 30 ft. de lui en pleine lumière, il se prend pour un rival et se cible de son regard. Les basilics ne peuvent pas voir le basilic avant le début de leur prochain tour, lorsqu'ils peuvent à nouveau détourner les yeux.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +5 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 10 (2d6 + 3) points de dégâts perforants plus 7 (2d6) points de dégâts de poison.",
+    "Difficulté": "2 (450 XP)",
+    "Traits": "<p><strong>Regard pétrifiant</strong> : Toute créature à moins de 9 mètres du basilic qui le regarde doit réussir un test de Chance (difficulté 4) ou commence à se transformer en pierre : elle est immobilisée.</p>\n<p>À la fin de son prochain tour, elle refait un test de Chance (diff. 4). En cas de succès, l'effet cesse. En cas d’échec, elle est pétrifiée jusqu’à la mort du basilic.</p>\n<p>Une créature peut éviter ce regard en détournant les yeux (elle ne voit alors pas le basilic pendant un tour). Si elle regarde le basilic entre-temps, elle doit immédiatement faire le test.</p>\n<p>Si le basilic voit son propre reflet à moins de 9 mètres en pleine lumière, il se cible lui-même avec son regard pétrifiant.</p>",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 10 dégâts perforants.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/185/1000/1000/636252762168821795.jpeg"
   },
@@ -1779,8 +1779,8 @@
     "Sens": "Initiative 13",
     "Langues": "Le chien Blink comprend le sylvain mais ne peut pas le parler",
     "Difficulté": "1/4 (50 XP)",
-    "Traits": "<em><strong>Keen Hearing and Smell.</strong></em> Le chien a l'avantage sur les tests de Sagesse (Perception) qui reposent sur l'ouïe ou l'odorat.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +3 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 4 (1d6 + 1) points de dégâts perforants. <br><br><em><strong>Téléportation (recharge 4-6).</strong></em> Le chien se téléporte magiquement, avec tout l'équipement qu'il porte, jusqu'à 40 ft. dans un espace inoccupé qu'il peut voir. Avant ou après la téléportation, le chien peut effectuer une attaque de morsure.",
+    "Traits": "<b>Ouïe et odorat développés</b> : Avantage aux tests de Perception basés sur l’ouïe ou l’odorat.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 4 dégâts perforants.\n\n<b>Téléportation</b> (recharge 4-6) : Se téléporte magiquement jusqu’à 12 m dans un espace visible. Peut faire une attaque de morsure avant ou après la téléportation.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/205/315/315/636252764168652859.jpeg"
   },
@@ -1875,7 +1875,7 @@
         "bonus": 0
       }
     },
-    "Armure": 2,
+    "Armure": 1,
     "PV": 11,
     "Vitesse": "40 ft. ",
     "Immunités dégâts": "",
@@ -1885,9 +1885,9 @@
     "Langues": "--",
     "Difficulté": "1/4 (50 XP)",
     "Traits": "<em><strong>Charge.</strong></em> Si le sanglier se déplace d'au moins 20 ft. en ligne droite vers une cible et la frappe ensuite avec une attaque de défense au même tour, la cible subit 3 (1d6) points de dégâts tranchants supplémentaires. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DC 11 ou être mise à terre. <br><br><em><strong>Infatigable (recharge après un repos court ou long).</strong></em> Si le sanglier subit 7 points de dégâts ou moins qui le réduiraient à 0 point de vie, il est réduit à 1 point de vie à la place.",
-    "Actions": "<em><strong>Bouclier.</strong></em> <em>Attaque d'arme de mêlée :</em> +3 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 4 (1d6 + 1) points de dégâts tranchants.",
+    "Actions": "<b>Défense</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 3 dégâts tranchants.\n\n<b>Charge</b> : Si le sanglier se déplace d’au moins 6 m en ligne droite vers une créature et la touche avec une attaque de défense, celle-ci subit 5 dégâts de matraquage supplémentaires et doit réussir un test de Force (Difficulté : Moyenne) ou être projetée à terre.\n\n\n\n\n\n\n",
     "Actions légendaires": "",
-    "img_url": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
+    "img_url": "https://www.aidedd.org/monster/img/boar.jpg"
   },
   {
     "name": "Diable osseux",
@@ -2436,7 +2436,7 @@
       }
     },
     "Armure": 0,
-    "PV": 27,
+    "PV": 12,
     "Vitesse": "20 ft., fly 40 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
@@ -2445,7 +2445,7 @@
     "Langues": "--",
     "Difficulté": "1/2 (100 XP)",
     "Traits": "",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +3 pour toucher, portée de 5 ft., une créature. <em>Coup :</em> 3 (1d4 + 1) points de dégâts perforants, et la cible doit réussir un jet de sauvegarde de Constitution DC 11 contre la pétrification magique. En cas d'échec, la créature commence à se transformer en pierre et est immobilisée. Elle doit refaire le jet de sauvegarde à la fin de son prochain tour. En cas de réussite, l'effet prend fin. En cas d'échec, la créature est pétrifiée pendant 24 heures.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une créature. Inflige 3 dégâts perforants.  \nLa cible doit réussir un test de Force (Difficulté : Facile) contre la pétrification magique. En cas d’échec, elle est immobilisée et doit refaire le test à la fin de son prochain tour. Un second échec la pétrifie pendant 24 h. Une réussite met fin à l’effet.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/251/315/315/636252767744669874.jpeg"
   },
@@ -2821,7 +2821,7 @@
       }
     },
     "Armure": 0,
-    "PV": 39,
+    "PV": 30,
     "Vitesse": "40 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
@@ -2829,8 +2829,8 @@
     "Sens": "Vision dans le noir, Initiative 15",
     "Langues": "--",
     "Difficulté": "1 (200 XP)",
-    "Traits": "<em><strong>Deux têtes</strong></em> Le chien a l'avantage sur les tests de Sagesse (Perception) et sur les jets de sauvegarde contre l'aveuglement, le charme, la surdité, la peur, l'étourdissement ou l'inconscience.",
-    "Actions": "<em><strong>Attaque Multiple.</strong></em> Le chien effectue deux attaques de morsure. <br><br><em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) points de dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Constitution DC 12 contre la maladie ou être empoisonnée jusqu'à ce que la maladie soit soignée. Toutes les 24 heures, la créature doit répéter le jet de sauvegarde, réduisant son maximum de points de vie de 5 (1d10) en cas d'échec. Cette réduction dure jusqu'à ce que la maladie soit guérie. La créature meurt si la maladie réduit son maximum de points de vie à 0. .",
+    "Traits": "<b>Deux têtes</b> : Avantage aux tests de Perception et aux jets contre l’aveuglement, le charme, la surdité, la peur, l’étourdissement et l’inconscience.",
+    "Actions": "<b>Attaque multiple</b> : Le chien effectue deux attaques de morsure.\n\n<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 5 dégâts perforants.  \nSi la cible est une créature, elle doit réussir un test de Constitution (Difficulté : Moyenne) ou être empoisonnée jusqu’à guérison. Tant qu’elle est malade, elle perd 5 points de vie max toutes les 24h si elle échoue un nouveau test. Elle meurt si son maximum atteint 0.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/265/1000/1000/636252768823194310.jpeg"
   },
@@ -3940,7 +3940,7 @@
         "bonus": 0
       }
     },
-    "Armure": 18,
+    "Armure": 15,
     "PV": 52,
     "Vitesse": "30 ft., fly 60 ft. ",
     "Immunités dégâts": "Poison",
@@ -3949,8 +3949,8 @@
     "Sens": "Vision dans le noir, Initiative 10",
     "Langues": "Terrien",
     "Difficulté": "2 (450 XP)",
-    "Traits": "<em><strong>Fausse apparence</strong></em> Alors que la gargouille reste immobile, il est impossible de la distinguer d'une statue inanimée.",
-    "Actions": "<em><strong>Multi-attaque.</strong></em> La gargouille effectue deux attaques : une avec sa morsure et une avec ses griffes. <br><br><em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) dégâts perforants. <br><br><em><strong>Claws.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 au toucher, portée de 5 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) points de dégâts tranchants.",
+    "Traits": "<b>Fausse apparence</b> : Tant qu’elle reste immobile, la gargouille ressemble à une statue inanimée.",
+    "Actions": "<b>Attaque multiple</b> : La gargouille effectue deux attaques, une avec sa morsure et une avec ses griffes.\n\n<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 5 dégâts perforants.\n\n<b>Griffes</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 5 dégâts tranchants.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/407/315/315/636252786295384889.jpeg"
   },
@@ -3979,13 +3979,13 @@
     "PV": 84,
     "Vitesse": "15 ft. ",
     "Immunités dégâts": "",
-    "Immunités conditions": "Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone",
+    "Immunités conditions": "Aveuglement, charme, surdité, épuisement, peur, à terre.",
     "Résistances": "",
     "Sens": "Vue aveugle 60 ft., Initiative 8",
     "Langues": "--",
     "Difficulté": "2 (450 XP)",
-    "Traits": "<em><strong>Cube de glace</strong></em> Le cube occupe tout son espace. D'autres créatures peuvent entrer dans l'espace, mais une créature qui le fait est soumise à l'Engloutissement du cube et a un désavantage sur le jet de sauvegarde. Les créatures à l'intérieur du cube peuvent être vues mais sont totalement à couvert.Une créature à moins de 5 ft. du cube peut entreprendre une action pour tirer une créature ou un objet hors du cube. Pour ce faire, il faut réussir un test de Force DC 12 et la créature qui fait la tentative subit 10 (3d6) points de dégâts d'acide.Le cube ne peut contenir qu'une seule créature de grande taille ou jusqu'à quatre créatures de taille moyenne ou plus petite à la fois. <br><br><em><strong>Transparent.</strong></em> Même lorsque le cube est à la vue de tous, il faut réussir un test de Sagesse (Perception) DC 15 pour repérer un cube qui n'a ni bougé ni attaqué. Une créature qui tente d'entrer dans l'espace du cube alors qu'elle n'en a pas conscience est surprise par le cube. <p style=\"text-align : justify ;\">Création d'un cube.",
-    "Actions": "<em><strong>Pseudopode</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une créature. <em>Coup :</em> 10 (3d6) points de dégâts d'acide. <br><br><em><strong>Engulf.</strong></em> Le cube se déplace à sa vitesse. Ce faisant, il peut entrer dans l'espace des créatures de grande taille ou plus petites. Chaque fois que le cube entre dans l'espace d'une créature, celle-ci doit faire un jet de sauvegarde de Dextérité DC 12.Si le jet est réussi, la créature peut choisir d'être repoussée de 5 ft. vers l'arrière ou sur le côté du cube. Une créature qui choisit de ne pas être poussée subit les conséquences d'un jet de sauvegarde raté.Sur une sauvegarde ratée, le cube entre dans l'espace de la créature, et celle-ci subit 10 (3d6) points de dégâts d'acide et est engloutie. La créature engloutie ne peut pas respirer, est entravée et subit 21 (6d6) points de dégâts d'acide au début de chaque tour du cube. Lorsque le cube se déplace, la créature engloutie se déplace avec lui.Une créature engloutie peut tenter de s'échapper en prenant une action pour faire un test de Force DC 12. En cas de réussite, la créature s'échappe et entre dans un espace de son choix à moins de 5 ft. du cube.La créature engloutie peut tenter de s'échapper en effectuant un test de Force DC 12.",
+    "Traits": "<b>Cube de glace</b> : Le cube remplit tout son espace. Une créature qui y entre subit l’effet d’<i>Engloutissement</i> avec désavantage au test. Les créatures à l’intérieur sont totalement à couvert.  \nUne créature à moins de 1,5 m peut tenter de tirer une autre créature ou un objet hors du cube avec un test de Force (Difficulté : Moyenne), subissant 10 dégâts d’acide en cas de tentative.  \nLe cube peut contenir 1 créature grande ou jusqu’à 4 moyennes ou petites.\n\n<b>Transparent</b> : Tant qu’il ne bouge pas et n’attaque pas, il faut réussir un test de Perception (Difficulté : Très Difficile) pour le repérer. Une créature entrant dans son espace sans l’avoir vu est surprise.",
+    "Actions": "<b>Pseudopode</b> : Attaque de mêlée (portée 1,5 m) contre une créature. Inflige 10 dégâts d’acide.\n\n<b>Engloutissement</b> : Le cube peut traverser les créatures de taille grande ou plus petite.  \nToute créature sur son passage doit réussir un test d’Agilité (Difficulté : Moyenne) ou subir 10 dégâts d’acide et être engloutie. En cas de réussite, elle peut se pousser de 1,5 m sur le côté.  \nUne créature engloutie ne peut pas respirer, est entravée, et subit 15 dégâts d’acide au début de chaque tour du cube. Elle se déplace avec lui.  \nElle peut tenter de s’échapper avec une action et un test de Force (Difficulté : Moyenne). En cas de réussite, elle réapparaît à 1,5 m du cube.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/409/1000/1000/636252786406028958.jpeg"
   },
@@ -4725,7 +4725,7 @@
     "img_url": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
   },
   {
-    "name": "Rat géant",
+    "name": "Rat géant Vénimeux",
     "meta": "Petite bête, non alignée",
     "stats": {
       "Force": {
@@ -4745,7 +4745,7 @@
         "bonus": 0
       }
     },
-    "Armure": 0,
+    "Armure": 1,
     "PV": 8,
     "Vitesse": "30 ft. ",
     "Immunités dégâts": "",
@@ -4754,10 +4754,10 @@
     "Sens": "Vision dans le noir, Initiative 10",
     "Langues": "--",
     "Difficulté": "1/8 (25 XP)",
-    "Traits": "<em><strong>Keen Smell.</strong></em> Le rat a l'avantage sur les tests de Sagesse (Perception) qui reposent sur l'odorat. <br><br><em><strong>Tactique de meute.</strong></em> Le rat a l'avantage sur un jet d'attaque contre une créature si au moins un des alliés du rat se trouve à moins de 5 ft. de la créature et que l'allié n'est pas incapacité.Le rat a l'avantage sur un jet d'attaque contre une créature.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup</em> : 4 (1d4 + 2) dégâts perforants.",
+    "Traits": "<b>Odorat développé</b> : Avantage aux tests de Perception basés sur l’odorat.\n\n<b>Tactique de meute</b> : Avantage aux attaques si un allié du rat se trouve à moins de 1,5 m de la cible et n’est pas incapacité.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 4 dégâts perforants.  \nLa cible doit réussir un test de Constitution (Difficulté : Facile) ou être légèrement empoisonnée.",
     "Actions légendaires": "",
-    "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/538/1000/1000/636376332197953299.jpeg"
+    "img_url": "https://www.co-drs.org/sites/default/files/styles/original_compressed/public/co/creature/2023-02/rat_giant-modified.png.webp?itok=to3XqABH"
   },
   {
     "name": "Scorpion géant",
@@ -7721,7 +7721,7 @@
       }
     },
     "Armure": 8,
-    "PV": 59,
+    "PV": 52,
     "Vitesse": "40 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
@@ -7729,8 +7729,8 @@
     "Sens": "Vision dans le noir, Initiative 13",
     "Langues": "--",
     "Difficulté": "3 (700 XP)",
-    "Traits": "<em><strong>Keen Sight and Smell.</strong></em> L'ours hibou a un avantage sur les tests de Sagesse (Perception) qui dépendent de la vue ou de l'odorat.",
-    "Actions": "<em><strong>Attaque Multiple.</strong></em> L'ours hibou effectue deux attaques : une avec son bec et une avec ses griffes. <br><br><em><strong>Bec.</strong></em> <em>Attaque d'arme de mêlée :</em> +7 pour toucher, portée de 5 ft., une créature. <em>Coup :</em> 10 (1d10 + 5) points de dégâts perforants. <br><br><em><strong>Claws.</strong></em> <em>Attaque d'arme de mêlée :</em> +7 au toucher, portée de 5 ft., une cible. <em>Coup :</em> 14 (2d8 + 5) dégâts tranchants.",
+    "Traits": "<b>Vue et odorat aiguisés</b> : Avantage aux tests de Perception basés sur la vue ou l’odorat.",
+    "Actions": "<b>Attaque multiple</b> : Le hibours effectue deux attaques : une avec son bec et une avec ses griffes.\n\n<b>Bec</b> : Attaque de mêlée (portée 1,5 m) contre une créature. Inflige 10 dégâts perforants.\n\n<b>Griffes</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 14 dégâts tranchants.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/315/315/315/636252772225295187.jpeg"
   },
@@ -8324,8 +8324,8 @@
     "Sens": "Vision dans le noir, Initiative 10",
     "Langues": "--",
     "Difficulté": "0 (10 XP)",
-    "Traits": "<em><strong>Keen Smell.</strong></em> Le rat a un avantage sur les tests de Sagesse (Perception) qui reposent sur l'odorat.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +0 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 1 dégât perforant.",
+    "Traits": "<b>Odorat développé</b> : Avantage aux tests de Perception basés sur l’odorat.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 1 dégât perforant.\n",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/541/315/315/636376335435407571.jpeg"
   },
@@ -9165,7 +9165,7 @@
     "Langues": "Comprend toutes les langues qu'il a connues dans sa vie mais qu'il ne peut pas parler",
     "Difficulté": "1/4 (50 XP)",
     "Traits": "",
-    "Actions": "<em><strong>Épée courte</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) points de dégâts perforants. <br><br><em><strong>Arc court.</strong></em> <em>Attaque d'arme à distance :</em> +4 au toucher, portée de 80/320 ft., une cible. <em>Coup :</em> 5 (1d6 + 2) dégâts perforants.",
+    "Actions": "<b>Épée courte</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 5 dégâts perforants.\n\n<b>Arc court</b> : Attaque à distance (portée 25 m / 100 m) contre une cible. Inflige 5 dégâts perforants.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/472/315/315/636376294573239565.jpeg"
   },
@@ -9940,7 +9940,7 @@
     "img_url": "https://media-waterdeep.cursecdn.com/attachments/2/648/beast.jpg"
   },
   {
-    "name": "Tréant",
+    "name": "Tréant, jeune",
     "meta": "Plante gigantesque, bien chaotique",
     "stats": {
       "Force": {
@@ -9972,7 +9972,7 @@
     "Traits": "<em><strong>Fausse apparence.</strong></em> Tant que l'arbre reste immobile, il est impossible de le distinguer d'un arbre normal. <br><br><em><strong>Monstre de siège.</strong></em> L'arbre inflige des dégâts doublés aux objets et aux structures.",
     "Actions": "<em><strong>Attaque Multiple.</strong></em> Le tréant effectue deux attaques de type slam. <br><br><em><strong>Slam.</strong></em> <em>Attaque d'arme de mêlée :</em> +10 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 16 (3d6 + 6) dégâts de matraquage. <br><br><em><strong>Rock.</strong></em> <em>Attaque d'arme à distance :</em> +10 au toucher, portée 60/180 ft., une cible. <em>Coup :</em> 28 (4d10 + 6) dégâts de matraquage. <br><br><em><strong>Animer les arbres (1/Jour).</strong></em> Le tréant anime magiquement un ou deux arbres qu'il peut voir dans un rayon de 60 ft. autour de lui. Ces arbres ont les mêmes statistiques que l'arbre, sauf qu'ils ont des scores d'Intelligence et de Charisme de 1, qu'ils ne peuvent pas parler et qu'ils n'ont que l'option de l'action de lancer. Un arbre animé agit comme un allié du tréant. L'arbre reste animé pendant 1 jour ou jusqu'à ce qu'il meure ; jusqu'à ce que le tréant meure ou se trouve à plus de 120 ft. de l'arbre ; ou jusqu'à ce que le tréant entreprenne une action bonus pour le retransformer en arbre inanimé. L'arbre prend alors racine si possible.",
     "Actions légendaires": "",
-    "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/97/315/315/636252740537990664.jpeg"
+    "img_url": "https://www.dndbeyond.com/avatars/thumbnails/30836/130/1000/1000/638063929302059775.png"
   },
   {
     "name": "Guerrier tribal",
@@ -10870,7 +10870,7 @@
         "bonus": 0
       }
     },
-    "Armure": 2,
+    "Armure": 1,
     "PV": 11,
     "Vitesse": "40 ft. ",
     "Immunités dégâts": "",
@@ -10879,8 +10879,8 @@
     "Sens": "Initiative 13",
     "Langues": "--",
     "Difficulté": "1/4 (50 XP)",
-    "Traits": "<em><strong>Keen Hearing and Smell.</strong></em> Le loup a l'avantage sur les tests de Sagesse (Perception) qui reposent sur l'ouïe ou l'odorat.<br><br><em><strong></strong></em> Le loup a l'avantage sur les jets d'attaque contre une créature si au moins un des alliés du loup se trouve à moins de 5 ft. de la créature et que l'allié n'est pas incapacité.<strong>Le loup a l'avantage sur les jets d'attaque contre une créature si au moins un des alliés du loup se trouve à moins de 5 ft. de la créature et que l'allié n'est pas incapacité.<strong>.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +4 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 7 (2d4 + 2) points de dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DC 11 ou être mise à terre.",
+    "Traits": "<b>Ouïe et odorat développés</b> : Avantage aux tests de Perception basés sur l’ouïe ou l’odorat.\n\n<b>Tactique de meute</b> : Avantage aux attaques si un allié du loup se trouve à moins de 1,5 m de la cible et n’est pas incapacité.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 7 dégâts perforants.  \nLa cible doit réussir un test de Force (Difficulté : Facile) ou être mise à terre.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/482/1000/1000/636376300223855327.jpeg"
   },
@@ -10906,7 +10906,7 @@
       }
     },
     "Armure": 2,
-    "PV": 30,
+    "PV": 25,
     "Vitesse": "50 ft. ",
     "Immunités dégâts": "",
     "Immunités conditions": "",
@@ -10915,7 +10915,7 @@
     "Langues": "Gobelin, Worg",
     "Difficulté": "1/2 (100 XP)",
     "Traits": "<em><strong>Keen Hearing and Smell.</strong></em> Le worg a l'avantage sur les tests de Sagesse (Perception) qui reposent sur l'ouïe ou l'odorat.",
-    "Actions": "<em><strong>Morsure.</strong></em> <em>Attaque d'arme de mêlée :</em> +5 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 10 (2d6 + 3) points de dégâts perforants. Si la cible est une créature, elle doit réussir un jet de sauvegarde de Force DC 13 ou être mise à terre.",
+    "Actions": "<b>Morsure</b> : Attaque de mêlée (portée 1,5 m) contre une cible. Inflige 10 dégâts perforants.  \nLa cible doit réussir un test de Force (Difficulté : Moyenne) ou être mise à terre.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/52/1000/1000/636252724662073178.jpeg"
   },
@@ -11430,8 +11430,8 @@
         "bonus": 0
       }
     },
-    "Armure": 0,
-    "PV": 14,
+    "Armure": 6,
+    "PV": 1,
     "Vitesse": "20 ft. ",
     "Immunités dégâts": "Poison",
     "Immunités conditions": "Empoisonné",
@@ -11439,8 +11439,8 @@
     "Sens": "Vision dans le noir, Initiative 8",
     "Langues": "Comprend les langues de son créateur mais ne peut pas parler",
     "Difficulté": "1/4 (50 XP)",
-    "Traits": "<em><strong>Fortitude du mort-vivant</strong></em> Si des dégâts réduisent le zombie à 0 point de vie, il doit faire un jet de sauvegarde de Constitution avec un DC de 5 + les dégâts subis, sauf si les dégâts sont rayonnants ou s'ils proviennent d'un coup critique. En cas de succès, le zombie tombe à 1 point de vie à la place.",
-    "Actions": "<em><strong>Frappe.</strong></em> <em>Attaque d'arme de mêlée :</em> +3 pour toucher, portée de 5 ft., une cible. <em>Coup :</em> 4 (1d6 + 1) dégâts de matraquage.",
+    "Traits": "<b>Fortitude du mort-vivant</b> : Si le zombie tombe à 0 PV, il peut faire un test de Constitution (Difficulté : 1 + dégâts subis). En cas de réussite, il reste à 1 PV. Échec automatique si les dégâts sont rayonnants ou s’il s’agit d’un coup critique.",
+    "Actions": "<b>Saisie putride</b> : Attaque de mêlée (portée 1,5 m) contre une créature. Inflige 2 dégâts.\nLa cible doit réussir un test de Force ou d’Agilité (Difficulté : Moyenne) ou être mise à terre et immobilisée tant qu’elle ne se libère pas avec une action (même test).\n\n<b>Morsure vorace</b> : Attaque de mêlée (portée 1,5 m) contre une créature immobilisée ou à terre. Inflige 6 dégâts perforants.",
     "Actions légendaires": "",
     "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/71/1000/1000/636252733510786769.jpeg"
   }

@@ -112,10 +112,14 @@ if monstre:
         col1, col2 = st.columns([2, 1])  # Gauche : infos, Droite : image
 
         with col2:
-            st.image(
-                monstre['img_url'],
-                caption=monstre['name'],
-                use_container_width="auto",
+            st.markdown(
+                f"""
+                <div style="max-height:500px; overflow:hidden; display:flex; justify-content:center;">
+                    <img src="{monstre['img_url']}" alt="{monstre['name']}" style="height:500px; object-fit:contain;" />
+                </div>
+                <p style="text-align:center;">{monstre['name']}</p>
+                """,
+                unsafe_allow_html=True
             )
 
         with col1:
@@ -161,7 +165,7 @@ if monstre:
 
             st.markdown(
                 f"""
-            <div style='margin:20px 0 0 0;background:linear-gradient(90deg,#f8fafb 85%,#e8ecf1 100%);border-radius:18px;border:1.5px solid #e0e4ea;box-shadow:0 2px 8px #b6c5d933;padding:24px 28px 18px 28px;max-width:700px;'>
+            <div style='margin:20px 0 20px 0;background:linear-gradient(90deg,#f8fafb 85%,#e8ecf1 100%);border-radius:18px;border:1.5px solid #e0e4ea;box-shadow:0 2px 8px #b6c5d933;padding:24px 28px 18px 28px;max-width:700px;'>
                 <div style='font-size:1.20em;font-weight:700;margin-bottom:12px;display:flex'>
                     <div style='flex:1;'>
                         <span style='color:#222;'>PV</span>
